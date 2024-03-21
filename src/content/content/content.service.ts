@@ -40,14 +40,14 @@ export class ContentService {
 
         return {
           date: item.date,
-          modified: item.modified,
-          content: item.content.rendered,
+          content: item.excerpt.rendered,
           id: item.id,
           categories: categories,
           tags: tags,
           title: item.title.rendered,
           status: item.status,
           featured_media: featuredMedia,
+          link: item.link,
         };
       }),
     );
